@@ -6,8 +6,8 @@
     DURATION: "140 Hours"
     TRAINER: "Shiva Kumar"
   tasks:
-  -name: Printvariables
-   ansible.builtin.debug:
-    msg: "Learning Course is {{ COURSE }} By Trainer {{ TRAINER }} around with duration of {{ DURATION }}"
+  - name: Printvariables
+    ansible.builtin.debug:
+      msg: "Learning Course is {{ COURSE }} By Trainer {{ TRAINER }} around with duration of {{ DURATION }}"
 
     
