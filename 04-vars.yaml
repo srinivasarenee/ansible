@@ -1,4 +1,4 @@
-- name : Playvariables
+- name: Playvariables
   hosts: localhost
   connection: local
   vars:
