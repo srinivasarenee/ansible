@@ -7,7 +7,7 @@
     TRAINER: "Shiva Kumar"
   tasks:
   -name: Printvariables
-  ansible.builtin.debug:
+   ansible.builtin.debug:
     msg: "Learning Course is {{ COURSE }} By Trainer {{ TRAINER }} around with duration of {{ DURATION }}"
 
     
