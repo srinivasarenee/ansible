@@ -12,8 +12,8 @@
 
   tasks:
   - name: Print Name Variable
-    vars: 
-     NAME: "Ansible from Task"
+    # vars: 
+    #  NAME: "Ansible from Task"
     ansible.builtin.debug:
      msg: "The Entered Text is: {{ NAME }}"
 
