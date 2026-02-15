@@ -1,0 +1,7 @@
+- name: Inventory Vars Demo
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print Inventory tasks
+    ansible.builtin.debug:
+     msg: "We are offering a free course for {{COURSE}}"
