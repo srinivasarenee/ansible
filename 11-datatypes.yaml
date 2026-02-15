@@ -16,8 +16,8 @@
   - name: Print Data types
     ansible.builtin.debug:
       msg: |
-        Course: {{ CCOURSE }}
-        Duration: {{ DDURATION }}
-        IsLive: {{ iISLIVE }}
-        Details: {{ DDETAILS }}
+        Course: {{ COURSE }}
+        Duration: {{ DURATION }}
+        IsLive: {{ ISLIVE }}
+        Details: {{ DETAILS }}
         Topics: {{ TOPICS }}
