@@ -1,5 +1,5 @@
 - name: prompt example
-  hosts: local
+  hosts: localhost
   connection: local
   vars_prompt:
   - name: USERID
