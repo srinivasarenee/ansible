@@ -3,7 +3,7 @@
   connection: local
   vars:
    NAME: "Ansible from Play"
-  vars_fies:
+  vars_files:
   - course.yaml
   vars_prompt:
    name : NAME
