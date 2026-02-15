@@ -7,7 +7,7 @@
     private: false
   - name: PWD
     prompt: Enter Password
-    private: ture
+    private: true
 
   tasks:
   - name: print prompt variables
