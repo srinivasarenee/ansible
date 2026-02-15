@@ -10,5 +10,5 @@
     vars:
      COURSE: "Integration"
     ansible.builtin.debug:
-     msg: "Current learning COURSE {{COURSER}} with a duration of {{DURATION}} by {{TRAINER}}"
+     msg: "Current learning COURSE {{COURSE}} with a duration of {{DURATION}} by {{TRAINER}}"
     
