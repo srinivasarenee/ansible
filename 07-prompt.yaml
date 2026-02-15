@@ -1,0 +1,15 @@
+- name: prompt example
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: USERID
+    prompt: Enter UserId 
+    private: false
+  - name: PWD
+    prompt: Enter Password
+    private: ture
+
+  tasks:
+  - name: print prompt variables
+    ansible.builtin.debug:
+     msg: "Your User Id : {{USERID}} with Password : {{PWD}}"

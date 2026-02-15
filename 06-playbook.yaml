@@ -1,0 +1,11 @@
+- name: File variables
+  hosts: localhost
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: Print
+    vars:
+     COURSE: "AWS"
+    ansible.builtin.debug:
+     msg: "New Course {{COURSE}} with a duration {{DURATION}} by {{TRAINER}}"

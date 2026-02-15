@@ -1,0 +1,14 @@
+- name: play and task variables
+  hosts: localhost
+  connection: local
+  vars:
+   COURSE: "DevOps"
+   DURATION: "140 Hours"
+   TRAINER: "Shiva"
+  tasks:
+  - name: Print variables
+    vars:
+     COURSE: "Integration"
+    ansible.builtin.debug:
+     msg: "Current learning COURSE {{COURSER}} with a duration of {{DURATION}} by {{TRAINER}}"
+    
