@@ -14,7 +14,7 @@
     - ANSIBLE
   tasks:
   - name: Print Data types
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: |
         Course: {{ CCOURSE }}
         Duration: {{ DDURATION }}
