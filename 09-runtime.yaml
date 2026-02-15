@@ -1,0 +1,7 @@
+- name: runtime args
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print Runitime args
+    ansible.builtin.debug:
+     msg: "Hello !  {{NAME}} , This is a runtime args demo. "
