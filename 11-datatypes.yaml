@@ -1,0 +1,23 @@
+- name: data types
+  hosts: localhost
+  connection: local
+  vars:
+    COURSE: "AWS DevOps Telugu"
+    DURATION: 140
+    ISLIVE: true
+    DETAILS:
+     MONTHS: 4
+     TRAINER: "SHIVA KUMAR"
+    TOPICS:
+    - LINUX
+    - SHELLSCRIPT
+    - ANSIBLE
+  tasks:
+  - name: Print Data types
+    ansible.buitin.debug:
+      msg: |
+        Course: {{ CCOURSE }}
+        Duration: {{ DDURATION }}
+        IsLive: {{ iISLIVE }}
+        Details: {{ DDETAILS }}
+        Topics: {{ TOPICS }}
