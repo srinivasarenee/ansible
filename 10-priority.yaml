@@ -1,0 +1,20 @@
+- name: Variable Priority
+  hosts: localhost
+  connection: local
+  vars:
+   NAME: "Ansible from Play"
+  vars_fies:
+  - course.yaml
+  vars_prompt:
+   name : NAME
+   prompt: "Enter NAME:"
+   private: false
+
+  tasks:
+  - name: Print Name Variable
+    vars: 
+     NAME: "Ansible from Task"
+    ansible.builtin.debug:
+     msg: "The Entered Text is: {{ NAME }}"
+
+
