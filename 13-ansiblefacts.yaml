@@ -5,3 +5,13 @@
   - name: Print Facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+
+  - name: Check for RedHat OS
+    ansible.buitin.debug:
+     msg: "Yes OS is {{ ansible_facts.os_famiy }}"
+    when: ansible_facts.os_famiy == "RedHat"
+
+  - name: Check for Debian
+    ansible.buitin.debug:
+     msg: "Yes OS is {{ ansible_facts.os_famiy }}"
+    when: ansible_facts.os_famiy == "Debian"
